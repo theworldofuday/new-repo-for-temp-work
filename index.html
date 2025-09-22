@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>ProFit - Premium Protein Supplements for Athletes</title>
+    <meta name="description" content="Premium protein supplements designed for athletes and fitness enthusiasts. Boost your performance with our scientifically formulated products." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2936/2936719.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    
+    <!-- Custom navbar hover animations -->
+    <style>
+      /* Navbar logo hover effect */
+      .navbar-brand {
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .navbar-brand:hover {
+        transform: scale(1.05);
+      }
+      
+      /* Navigation links hover effects */
+      .navbar-nav .nav-link {
+        transition: all 0.3s ease-in-out;
+        position: relative;
+      }
+      
+      .navbar-nav .nav-link:hover {
+        color: #28a745 !important;
+        transform: translateY(-2px);
+      }
+      
+      .navbar-nav .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 50%;
+        background-color: #28a745;
+        transition: all 0.3s ease-in-out;
+        transform: translateX(-50%);
+      }
+      
+      .navbar-nav .nav-link:hover::after {
+        width: 80%;
+      }
+      
+      /* Header action icons styling */
+      .header-action ul li a {
+        transition: all 0.3s ease-in-out;
+        color: #2acb35 !important;
+      }
+      
+      .header-action ul li a:hover {
+        color: #28a745 !important;
+        transform: scale(1.1);
+        background-color: rgba(40, 167, 69, 0.1) !important;
+        border-radius: 50%;
+      }
+      
+      .header-action ul li.shop-cart .cart-count {
+        background: #28a745 !important;
+      }
+      }
+      
+      /* Order button hover effect */
+      .header-btn .btn {
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .header-btn .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+      }
+      
+      /* Custom cursor styles */
+      * {
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="%2328a745" stroke="%23ffffff" stroke-width="2"/></svg>'), auto !important;
+      }
+      
+      /* Cursor trail effect */
+      .cursor-trail {
+        position: fixed;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: rgba(40, 167, 69, 0.1);
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        animation: trailFade 0.8s ease-out forwards;
+      }
+      
+      @keyframes trailFade {
+        0% {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
+        }
+        100% {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(1.5);
+        }
+      }
+      
+      /* Footer headings color */
+      .footer-widget .fw-title h5 {
+        color: #212529 !important;
+      }
+
+      /* Sticky Header Styles */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background: #fff;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+      }
+
+      #header-sticky {
+        background: #fff;
+        padding: 10px 0;
+      }
+
+      /* Add top margin to body to compensate for fixed header */
+      body {
+        padding-top: 80px;
+      }
+
+      /* Mobile responsive adjustments */
+      @media (max-width: 768px) {
+        body {
+          padding-top: 70px;
+        }
+        
+        #header-sticky {
+          padding: 8px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- preloader -->
+    <div id="preloader">
+      <div id="loading-center">
+        <div id="loading-center-absolute">
+          <div class="object" id="object_one"></div>
+          <div class="object" id="object_two"></div>
+          <div class="object" id="object_three"></div>
+        </div>
+      </div>
+    </div>
+    <!-- preloader-end -->
+
+    <!-- header-start -->
+    <header>
+      <div id="header-sticky" class="main-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="main-menu">
+                <nav class="navbar navbar-expand-lg">
+                  <a href="index.html" class="navbar-brand">
+                    <span style="font-size: 32px; font-weight: bold; color: #28a745; font-family: 'Riffic', 'Arial', sans-serif;">
+                      Pro<span style="color: #212529;">Fit</span>
+                    </span>
+                  </a>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                  >
+                    <span class="navbar-icon"></span>
+                    <span class="navbar-icon"></span>
+                    <span class="navbar-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#supplement">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="order.html">Order</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-action">
+                    <ul>
+                      <li class="search-icon">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li class="shop-cart">
+                        <a href="order.html"
+                          ><i class="fas fa-shopping-basket"></i
+                          ><span class="cart-count">0</span
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-btn d-none d-xl-block">
+                    <a href="order.html" class="btn">order now</a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header-start-end -->
+
+    <!-- main-area -->
+    <main>
+      <!-- slider-area -->
+      <section
+        id="home"
+        class="slider-area slider-bg d-flex align-items-center"
+      >
+        <div class="container">
+          <div class="slider-overflow">
+            <div class="row">
+              <div class="col-lg-6 order-0 order-lg-2">
+                <div
+                  class="slider-img text-center text-lg-right text-xl-center position-relative"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                    alt="Premium Protein Supplements"
+                    class="wow fadeInRight"
+                    data-wow-delay="0.6s"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="slider-content">
+                  <h2 class="wow fadeInUp" data-wow-delay="0.2s">
+                    Fuel Your <span>Athletic Performance</span> with Premium Protein
+                  </h2>
+                  <p class="wow fadeInUp" data-wow-delay="0.4s">
+                    Scientifically formulated protein supplements designed for serious athletes and fitness enthusiasts. 
+                    Our premium whey protein isolate delivers 25g of pure protein per serving with all essential amino acids.
+                    <br />
+                    Build lean muscle, accelerate recovery, and achieve your fitness goals with our clean, 
+                    third-party tested supplements that contain no artificial fillers or unnecessary additives.
+                  </p>
+                  <div class="slider-btn">
+                    <a
+                      href="order.html"
+                      class="btn wow fadeInLeft"
+                      data-wow-delay="0.6s"
+                      >Shop Now</a
+                    >
+                    <a
+                      href="#contact"
+                      class="btn transparent-btn wow fadeInRight"
+                      data-wow-delay="0.6s"
+                      >Contact Us</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- slider-area-end -->
+
+      <!-- features-area -->
+      <section id="features" class="features-area features-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="single-features text-center mb-30">
+                <div class="features-icon mb-20">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2936/2936719.png" alt="Muscle Building" style="width: 80px; height: 80px;" />
+                </div>
+                <div class="features-content">
+                  <h5>Muscle Building</h5>
+                  <p>
+                    25g of complete protein per serving with all 9 essential amino acids 
+                    to support lean muscle growth and development.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="single-features text-center mb-30">
+                <div class="features-icon mb-20">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2936/2936860.png" alt="Fast Recovery" style="width: 80px; height: 80px;" />
+                </div>
+                <div class="features-content">
+                  <h5>Fast Recovery</h5>
+                  <p>
+                    Rapid absorption formula helps reduce muscle soreness and 
+                    speeds up recovery time between intense training sessions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="single-features text-center mb-30">
+                <div class="features-icon mb-20">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2936/2936878.png" alt="Pure Quality" style="width: 80px; height: 80px;" />
+                </div>
+                <div class="features-content">
+                  <h5>Pure Quality</h5>
+                  <p>
+                    Third-party tested for purity and potency. No artificial fillers, 
+                    colors, or unnecessary additives - just pure protein.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="single-features text-center mb-30">
+                <div class="features-icon mb-20">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2936/2936888.png" alt="Daily Nutrition" style="width: 80px; height: 80px;" />
+                </div>
+                <div class="features-content">
+                  <h5>Daily Nutrition</h5>
+                  <p>
+                    Perfect for post-workout recovery, meal replacement, or 
+                    anytime you need high-quality protein supplementation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- features-area-end -->
+
+      <!-- services-area -->
+      <section id="supplement" class="services-area pt-110 pb-120">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-10">
+              <div class="section-title text-center mb-55">
+                <h2>Why Choose ProFit Supplements</h2>
+                <div class="bar"></div>
+                <p>
+                  Our commitment to quality, purity, and scientific formulation sets us apart. 
+                  Every product is designed with the serious athlete in mind.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="single-delivery-services mb-70 pr-40">
+                <div class="ds-icon order-0 order-md-2">
+                  <i class="flaticon-drug"></i>
+                </div>
+                <div class="ds-content text-center text-sm-left text-md-right">
+                  <h5>Premium Whey Isolate</h5>
+                  <p>
+                    90%+ protein content with minimal lactose and fat for maximum purity and digestibility.
+                  </p>
+                </div>
+              </div>
+              <div class="single-delivery-services mb-70 pr-40">
+                <div class="ds-icon order-0 order-md-2">
+                  <i class="flaticon-atom"></i>
+                </div>
+                <div class="ds-content text-center text-sm-left text-md-right">
+                  <h5>Scientific Formulation</h5>
+                  <p>
+                    Developed by sports nutritionists and backed by peer-reviewed research studies.
+                  </p>
+                </div>
+              </div>
+              <div class="single-delivery-services mb-70 pr-40">
+                <div class="ds-icon order-0 order-md-2">
+                  <i class="flaticon-protein"></i>
+                </div>
+                <div class="ds-content text-center text-sm-left text-md-right">
+                  <h5>Third-Party Tested</h5>
+                  <p>
+                    Every batch tested for banned substances and contaminants by independent laboratories.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 d-none d-xl-block">
+              <div class="d-services-img">
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Protein Supplements" style="max-width: 100%; height: auto; max-height: 400px; object-fit: cover;" />
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="single-delivery-services mb-70 pl-40">
+                <div class="ds-icon">
+                  <i class="flaticon-bee"></i>
+                </div>
+                <div class="ds-content">
+                  <h5>Natural Flavoring</h5>
+                  <p>
+                    Delicious natural flavors without artificial sweeteners or synthetic additives.
+                  </p>
+                </div>
+              </div>
+              <div class="single-delivery-services mb-70 pl-40">
+                <div class="ds-icon">
+                  <i class="flaticon-herbal"></i>
+                </div>
+                <div class="ds-content">
+                  <h5>Clean Ingredients</h5>
+                  <p>
+                    Sourced from grass-fed cows with no rBST, hormones, or artificial preservatives.
+                  </p>
+                </div>
+              </div>
+              <div class="single-delivery-services mb-70 pl-40">
+                <div class="ds-icon">
+                  <i class="flaticon-fishes"></i>
+                </div>
+                <div class="ds-content">
+                  <h5>Fast Absorption</h5>
+                  <p>
+                    Optimized for rapid digestion and amino acid delivery to working muscles.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services-area-end -->
+
+      <!-- video-area -->
+      <section class="video-area video-bg">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-xl-7 col-lg-8">
+              <div class="video-play">
+                <a
+                  href="https://www.youtube.com/watch?v=iWKu6WNFf9M"
+                  class="popup-video"
+                  ><i class="fas fa-play"></i
+                ></a>
+              </div>
+              <div class="video-title text-center">
+                <h2>
+                  Premium protein supplements trusted by athletes for over 10 years
+                </h2>
+                <p>
+                  See how our scientifically formulated protein supplements have helped thousands 
+                  of athletes achieve their fitness goals and reach peak performance levels.
+                </p>
+                <a href="order.html" class="btn">Shop Products</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- video-area-end -->
+
+      <!-- gallery-area -->
+      <section id="gallery" class="gallery-area gallery-bg pt-110 pb-90">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-10">
+              <div class="section-title text-center mb-55">
+                <h2>Product Gallery</h2>
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-xl-8 text-center">
+              <div class="product-menu mb-60">
+                <button class="active" data-filter="*">All Products</button>
+                <button class="" data-filter=".cat-one">Whey Protein</button>
+                <button class="" data-filter=".cat-two">Casein</button>
+                <button class="" data-filter=".cat-three">Plant Protein</button>
+                <button class="" data-filter=".cat-four">Pre-Workout</button>
+                <button class="" data-filter=".cat-five">Recovery</button>
+              </div>
+            </div>
+          </div>
+          <div class="row gallery-active">
+            <div class="col-lg-4 col-md-6 grid-item cat-one cat-five">
+              <div class="single-gallery-img mb-30">
+                <a href="#"
+                  ><img src="https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Gold Standard Whey Protein"
+                /></a>
+                <div class="gallery-overlay">
+                  <h5 class="gallery-overlay-title">
+                    <a href="#">Gold Standard Whey Protein</a>
+                  </h5>
+                  <span>24g Protein, 120 Calories</span>
+                  <div class="product-actions">
+                    <button class="btn btn-sm btn-primary add-to-cart" data-product="gold-whey" data-price="2499">Add to Cart - ₹2,499</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 grid-item cat-two">
+              <div class="single-gallery-img mb-30">
+                <a href="#"
+                  ><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Casein Protein Powder"
+                /></a>
+                <div class="gallery-overlay">
+                  <h5 class="gallery-overlay-title">
+                    <a href="#">Micellar Casein Protein</a>
+                  </h5>
+                  <span>28g Protein, Slow Release</span>
+                  <div class="product-actions">
+                    <button class="btn btn-sm btn-primary add-to-cart" data-product="casein" data-price="2799">Add to Cart - ₹2,799</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 grid-item cat-three">
+              <div class="single-gallery-img mb-30">
+                <a href="#"
+                  ><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Plant Protein Powder"
+                /></a>
+                <div class="gallery-overlay">
+                  <h5 class="gallery-overlay-title">
+                    <a href="#">Plant Protein Blend</a>
+                  </h5>
+                  <span>25g Plant Protein, Vegan</span>
+                  <div class="product-actions">
+                    <button class="btn btn-sm btn-primary add-to-cart" data-product="plant-protein" data-price="2199">Add to Cart - ₹2,199</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 grid-item cat-one cat-four cat-two">
+              <div class="single-gallery-img mb-30">
+                <a href="#"
+                  ><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Premium Protein"
+                /></a>
+                <div class="gallery-overlay">
+                  <h5 class="gallery-overlay-title">
+                    <a href="#">Premium Protein Mix</a>
+                  </h5>
+                  <span>Multiple Flavors Available</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 grid-item cat-five cat-three cat-two">
+              <div class="single-gallery-img mb-30">
+                <a href="#"
+                  ><img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Pre-Workout Supplements"
+                /></a>
+                <div class="gallery-overlay">
+                  <h5 class="gallery-overlay-title">
+                    <a href="#">Pre-Workout Formula</a>
+                  </h5>
+                  <span>Energy & Focus Boost</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 grid-item cat-five cat-three cat_two">
+              <div class="single-gallery-img mb-30">
+                <a href="#"
+                  ><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Casein Protein"
+                /></a>
+                <div class="gallery-overlay">
+                  <h5 class="gallery-overlay-title">
+                    <a href="#">Casein Protein</a>
+                  </h5>
+                  <span>Slow Release Formula</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 grid-item cat-five cat-three cat_two">
+              <div class="single-gallery-img mb-30">
+                <a href="#"
+                  ><img src="https://images.unsplash.com/photo-1594882645126-14020914d58d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Plant Protein"
+                /></a>
+                <div class="gallery-overlay">
+                  <h5 class="gallery-overlay-title">
+                    <a href="#">Plant Protein</a>
+                  </h5>
+                  <span>Vegan & Natural</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- gallery-area-end -->
+
+      <!-- fact-area -->
+      <section class="fact-area fact-bg">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10">
+              <div class="section-title white-title text-center mb-55">
+                <h2>
+                  Trusted by athletes worldwide<br />
+                  <span>10+ years of excellence</span>
+                </h2>
+                <p>
+                  Since 2013, ProFit has been the go-to choice for serious athletes and fitness enthusiasts. 
+                  Our commitment to quality, purity, and performance has earned the trust of thousands of customers worldwide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-fact text-center mb-50">
+                <div class="fact-icon mb-25">
+                  <img src="https://cdn-icons-png.flaticon.com/512/1870/1870082.png" alt="icon" style="width: 60px; height: 60px;" />
+                </div>
+                <div class="fact-content">
+                  <h5><span class="count">50,000</span>+</h5>
+                  <p>Happy Customers</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-fact text-center mb-50">
+                <div class="fact-icon mb-25">
+                  <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="icon" style="width: 60px; height: 60px;" />
+                </div>
+                <div class="fact-content">
+                  <h5><span class="count">25</span>+</h5>
+                  <p>Countries Served</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-fact text-center mb-50">
+                <div class="fact-icon mb-25">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2693/2693507.png" alt="icon" style="width: 60px; height: 60px;" />
+                </div>
+                <div class="fact-content">
+                  <h5><span class="count">98</span>%</h5>
+                  <p>Customer Satisfaction</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-fact text-center mb-50">
+                <div class="fact-icon mb-25">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3652/3652191.png" alt="icon" style="width: 60px; height: 60px;" />
+                </div>
+                <div class="fact-content">
+                  <h5><span class="count">10</span>+</h5>
+                  <p>Years Experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- fact-area-end -->
+
+      <!-- faq-area -->
+      <section class="faq-area faq-bg pt-110 pb-120">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-10">
+              <div class="section-title text-center mb-55">
+                <h2>Ingredient Information</h2>
+                <div class="bar"></div>
+                <p>
+                  Learn about the high-quality ingredients that make our protein supplements 
+                  the choice of serious athletes and fitness professionals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="faq-img">
+                <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Protein Ingredients" />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="faq-wrapper-padding">
+                <div class="faq-wrapper">
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <a
+                            href="#"
+                            class="btn-link collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                          >
+                            What is whey protein isolate?
+                          </a>
+                        </h5>
+                      </div>
+                      <div
+                        id="collapseOne"
+                        class="collapse"
+                        aria-labelledby="headingOne"
+                        data-parent="#accordionExample"
+                      >
+                        <div class="card-body">
+                          <p>
+                            Whey protein isolate is the purest form of whey protein, containing 90%+ protein 
+                            with minimal lactose, fat, and carbohydrates. It's rapidly absorbed and ideal 
+                            for post-workout recovery.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <a
+                            href="#"
+                            class="btn-link"
+                            data-toggle="collapse"
+                            data-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                          >
+                            Are your products third-party tested?
+                          </a>
+                        </h5>
+                      </div>
+                      <div
+                        id="collapseTwo"
+                        class="collapse show"
+                        aria-labelledby="headingTwo"
+                        data-parent="#accordionExample"
+                      >
+                        <div class="card-body">
+                          <p>
+                            Yes, every batch of our protein supplements is tested by independent laboratories 
+                            for purity, potency, and banned substances. We provide certificates of analysis 
+                            for complete transparency.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <a
+                            href="#"
+                            class="btn-link collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                          >
+                            What is the best time to take protein supplements?
+                          </a>
+                        </h5>
+                      </div>
+                      <div
+                        id="collapseThree"
+                        class="collapse"
+                        aria-labelledby="headingThree"
+                        data-parent="#accordionExample"
+                      >
+                        <div class="card-body">
+                          <p>
+                            The best time to take protein supplements is within 30 minutes post-workout 
+                            to maximize muscle recovery and growth. However, they can also be taken 
+                            throughout the day to meet your protein intake goals.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                          <a
+                            href="#"
+                            class="btn-link collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapseFour"
+                            aria-expanded="false"
+                            aria-controls="collapseFour"
+                          >
+                            Can women take protein supplements?
+                          </a>
+                        </h5>
+                      </div>
+                      <div
+                        id="collapseFour"
+                        class="collapse"
+                        aria-labelledby="headingFour"
+                        data-parent="#accordionExample"
+                      >
+                        <div class="card-body">
+                          <p>
+                            Absolutely! Protein supplements are beneficial for women as they are for men. 
+                            They support muscle recovery, weight management, and overall health. Women 
+                            can benefit from the same high-quality protein sources, just in appropriate 
+                            serving sizes to meet their individual needs.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                          <a
+                            href="#"
+                            class="btn-link collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapseFive"
+                            aria-expanded="false"
+                            aria-controls="collapseFive"
+                          >
+                            Are there any side effects of taking protein supplements?
+                          </a>
+                        </h5>
+                      </div>
+                      <div
+                        id="collapseFive"
+                        class="collapse"
+                        aria-labelledby="headingFive"
+                        data-parent="#accordionExample"
+                      >
+                        <div class="card-body">
+                          <p>
+                            When taken as directed, protein supplements are safe for most people. However, 
+                            excessive protein intake can lead to digestive issues, kidney damage, and other health 
+                            problems. It's important to use protein supplements to complement your diet, not 
+                            replace whole foods. Always consult with a healthcare provider before starting any 
+                            new supplement regimen.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- faq-area-end -->
+
+      <!-- athlete testimonials (renamed from doctor-area) -->
+      <section id="testimonials" class="doctor-area doctor-bg pt-110 pb-65">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-10">
+              <div class="section-title white-title text-center mb-55">
+                <h2>Trusted by Athletes & Coaches</h2>
+                <div class="bar"></div>
+                <p>
+                  See what professional athletes, coaches, and fitness experts say about 
+                  our premium protein supplements and their impact on performance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="doctor-wrap pl-80 pr-80">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="single-doctor mb-55">
+                  <div class="doctor-thumb">
+                    <img src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Professional Female Athlete" />
+                  </div>
+                  <div class="doctor-content">
+                    <div class="doctor-icon">
+                      <img src="img/icon/envato_icon.png" alt="testimonial" />
+                    </div>
+                    <p>
+                      "ProFit's whey isolate has been a game-changer for my training. The quality is 
+                      unmatched and I've seen significant improvements in my recovery time and muscle 
+                      development since switching to their products."
+                    </p>
+                    <div class="doctor-info">
+                      <h6>Sarah Johnson <span>- Olympic Swimmer</span></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="single-doctor mb-55">
+                  <div class="doctor-thumb">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Professional Male Coach" />
+                  </div>
+                  <div class="doctor-content">
+                    <div class="doctor-icon">
+                      <img src="img/icon/envato_icon.png" alt="testimonial" />
+                    </div>
+                    <p>
+                      "As a coach, I only recommend supplements that I trust. ProFit's commitment to quality 
+                      and transparency is evident in every scoop. My athletes love the results they get from 
+                      the whey protein and BCAA supplements."
+                    </p>
+                    <div class="doctor-info">
+                      <h6>Mike Anderson <span>- Head Coach, Track & Field</span></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="single-doctor mb-55">
+                  <div class="doctor-thumb">
+                    <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Female Fitness Expert" />
+                  </div>
+                  <div class="doctor-content">
+                    <div class="doctor-icon">
+                      <img src="img/icon/envato_icon.png" alt="testimonial" />
+                    </div>
+                    <p>
+                      "I've tried many protein supplements over the years, but ProFit's whey isolate is 
+                      by far the best. It mixes well, tastes great, and most importantly, it works. 
+                      I recover faster and feel stronger since I started using ProFit."
+                    </p>
+                    <div class="doctor-info">
+                      <h6>Emily Roberts <span>- Fitness Expert & Trainer</span></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="single-doctor mb-55">
+                  <div class="doctor-thumb">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Professional Bodybuilder" />
+                  </div>
+                  <div class="doctor-content">
+                    <div class="doctor-icon">
+                      <img src="img/icon/envato_icon.png" alt="testimonial" />
+                    </div>
+                    <p>
+                      "ProFit has been my go-to protein supplement for years. The quality is consistent, 
+                      and I love that it's third-party tested. I recommend ProFit to all my clients."
+                    </p>
+                    <div class="doctor-info">
+                      <h6>James Smith <span>- Professional Bodybuilder</span></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonials-end -->
+
+      <!-- brand-area -->
+      <div class="brand-area pt-120 pb-120">
+        <div class="container">
+          <div class="row brand-active">
+            <div class="col-12">
+              <div class="signle-brand">
+                <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Fitness Brand" style="width: 120px; height: 60px; object-fit: contain;" />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="signle-brand">
+                <img src="https://cdn-icons-png.flaticon.com/512/3008/3008460.png" alt="Sports Brand" style="width: 120px; height: 60px; object-fit: contain;" />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="signle-brand">
+                <img src="https://cdn-icons-png.flaticon.com/512/2936/2936719.png" alt="Nutrition Brand" style="width: 120px; height: 60px; object-fit: contain;" />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="signle-brand">
+                <img src="https://cdn-icons-png.flaticon.com/512/2936/2936878.png" alt="Wellness Brand" style="width: 120px; height: 60px; object-fit: contain;" />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="signle-brand">
+                <img src="https://cdn-icons-png.flaticon.com/512/2936/2936888.png" alt="Athletic Brand" style="width: 120px; height: 60px; object-fit: contain;" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- brand-area-end -->
+
+      <!-- newsletter -->
+      <section class="newsletter-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="newsletter-wrap">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="newsletter-content">
+                      <h4>Get Training Tips & Offers</h4>
+                      <span>Subscribe for exclusive deals and nutrition tips...</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="newsletter-form">
+                      <form action="#">
+                        <input type="email" placeholder="Enter your email..." />
+                        <button class="btn">subscribe</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- newsletter-end -->
+    </main>
+    <!-- main-area-end -->
+
+    <!-- footer -->
+    <footer id="contact">
+      <div
+        class="footer-wrap pt-190 pb-40"
+        data-background="img/bg/footer_bg.jpg"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="footer-widget mb-50">
+                <div class="footer-logo mb-35">
+                  <a href="index.html">
+                    <span style="font-size: 32px; font-weight: bold; color: #28a745; font-family: 'Riffic', 'Arial', sans-serif;">
+                      Pro<span style="color: #212529;">Fit</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    Premium protein supplements for serious athletes. Quality, purity, 
+                    and performance you can trust.
+                  </p>
+                </div>
+                <div class="footer-social">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="footer-widget mb-50">
+                <div class="fw-title mb-30">
+                  <h5>Latest Articles</h5>
+                </div>
+                <div class="f-rc-post">
+                  <ul>
+                    <li>
+                      <div class="f-rc-thumb">
+                        <a href="blog.html"
+                          ><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Protein Guide"
+                        /></a>
+                      </div>
+                      <div class="f-rc-content">
+                        <span>Dec 15, 2023</span>
+                        <h5>
+                          <a href="blog.html">Complete Guide to Protein Timing</a>
+                        </h5>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="f-rc-thumb">
+                        <a href="blog.html"
+                          ><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Training Tips"
+                        /></a>
+                      </div>
+                      <div class="f-rc-content">
+                        <span>Dec 12, 2023</span>
+                        <h5>
+                          <a href="blog.html">Whey vs Casein: Which is Better?</a>
+                        </h5>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="footer-widget mb-50">
+                <div class="fw-title mb-30">
+                  <h5>Useful Links</h5>
+                </div>
+                <div class="fw-link">
+                  <ul>
+                    <li>
+                      <a href="index.html"
+                        ><i class="fas fa-caret-right"></i> Home</a
+                      >
+                    </li>
+                    <li>
+                      <a href="index.html#supplement"
+                        ><i class="fas fa-caret-right"></i> Products</a
+                      >
+                    </li>
+                    <li>
+                      <a href="order.html"
+                        ><i class="fas fa-caret-right"></i> Order Online</a
+                      >
+                    </li>
+                    <li>
+                      <a href="blog.html"
+                        ><i class="fas fa-caret-right"></i> Nutrition Blog</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#contact"
+                        ><i class="fas fa-caret-right"></i> Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="footer-widget mb-50">
+                <div class="fw-title mb-30">
+                  <h5>Get In Touch</h5>
+                </div>
+                <div class="footer-form">
+                  <form action="#">
+                    <input type="email" placeholder="Your Email Address" />
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Questions about nutrition or training?"
+                    ></textarea>
+                    <button class="btn">Send Message</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-wrap">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-7">
+              <div class="copyright-text">
+                <p>Copyright© <span>ProFit Supplements </span> | All Rights Reserved</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-5">
+              <div class="f-payment-method text-center text-md-right">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Payment Methods" style="max-height: 40px;" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- JS here -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Cursor trail effect -->
+    <script>
+      document.addEventListener('mousemove', function(e) {
+        const trail = document.createElement('div');
+        trail.className = 'cursor-trail';
+        trail.style.left = e.clientX + 'px';
+        trail.style.top = e.clientY + 'px';
+        document.body.appendChild(trail);
+        
+        setTimeout(() => {
+          trail.remove();
+        }, 800);
+      });
+    </script>
+  </body>
+</html>

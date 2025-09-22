@@ -1,0 +1,567 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ProFit Blog - Nutrition & Training Tips | Premium Protein Supplements</title>
+        <meta name="description" content="Expert advice on protein supplementation, workout nutrition, and fitness tips from certified trainers and nutritionists.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2936/2936719.png">
+        <!-- Place favicon.ico in the root directory -->
+
+		<!-- CSS here -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/flaticon.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/aos.css">
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        
+        <!-- Custom navbar hover animations -->
+        <style>
+          /* Navbar logo hover effect */
+          .navbar-brand {
+            transition: all 0.3s ease-in-out;
+          }
+          
+          .navbar-brand:hover {
+            transform: scale(1.05);
+          }
+          
+          /* Navigation links hover effects */
+          .navbar-nav .nav-link {
+            transition: all 0.3s ease-in-out;
+            position: relative;
+          }
+          
+          .navbar-nav .nav-link:hover {
+            color: #28a745 !important;
+            transform: translateY(-2px);
+          }
+          
+          .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background-color: #28a745;
+            transition: all 0.3s ease-in-out;
+            transform: translateX(-50%);
+          }
+          
+          .navbar-nav .nav-link:hover::after {
+            width: 80%;
+          }
+          
+          /* Header action icons styling */
+          .header-action ul li a {
+            transition: all 0.3s ease-in-out;
+            color: #2acb35 !important;
+          }
+          
+          .header-action ul li a:hover {
+            color: #28a745 !important;
+            transform: scale(1.1);
+            background-color: rgba(40, 167, 69, 0.1) !important;
+            border-radius: 50%;
+          }
+          
+          .header-action ul li.shop-cart .cart-count {
+            background: #28a745 !important;
+          }
+          
+          /* Custom cursor styles */
+          * {
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="%2328a745" stroke="%23ffffff" stroke-width="2"/></svg>'), auto !important;
+          }
+          
+          /* Cursor trail effect */
+          .cursor-trail {
+            position: fixed;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(40, 167, 69, 0.1);
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            animation: trailFade 0.8s ease-out forwards;
+          }
+          
+          @keyframes trailFade {
+            0% {
+              opacity: 1;
+              transform: translate(-50%, -50%) scale(1);
+            }
+            100% {
+              opacity: 0;
+              transform: translate(-50%, -50%) scale(1.5);
+            }
+          }
+
+          /* Sticky Header Styles */
+          header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+          }
+
+          #header-sticky {
+            background: #fff;
+            padding: 10px 0;
+          }
+
+          /* Add top margin to body to compensate for fixed header */
+          body {
+            padding-top: 80px;
+          }
+
+          /* Mobile responsive adjustments */
+          @media (max-width: 768px) {
+            body {
+              padding-top: 70px;
+            }
+            
+            #header-sticky {
+              padding: 8px 0;
+            }
+          }
+        </style>
+    </head>
+    <body>
+
+        <!-- preloader -->
+        <div id="preloader">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                </div>
+            </div>
+        </div>
+        <!-- preloader-end -->
+
+        <!-- header-start -->
+        <header>
+            <div id="header-sticky" class="main-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="main-menu">
+                                <nav class="navbar navbar-expand-lg">
+                                    <a href="index.html" class="navbar-brand">
+                                        <span style="font-size: 32px; font-weight: bold; color: #28a745; font-family: 'Riffic', 'Arial', sans-serif;">
+                                          Pro<span style="color: #212529;">Fit</span>
+                                        </span>
+                                    </a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarNav">
+                                        <span class="navbar-icon"></span>
+                                        <span class="navbar-icon"></span>
+                                        <span class="navbar-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNav">
+                                        <ul class="navbar-nav ml-auto">
+                                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="index.html#supplement">Products</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
+                                            <li class="nav-item active"><a class="nav-link" href="blog.html">Blog</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-action">
+                                        <ul>
+                                            <li class="search-icon"><a href="#"><i class="fas fa-search"></i></a></li>
+                                            <li class="shop-cart"><a href="order.html"><i class="fas fa-shopping-basket"></i><span class="cart-count">0</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-btn d-none d-xl-block">
+                                        <a href="order.html" class="btn">order now</a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-start-end -->
+
+        <!-- main-area -->
+        <main>
+
+            <!-- breadcrumb-area -->
+            <section class="breadcrumb-area breadcrumb-bg d-flex align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="breadcrumb-content text-center">
+                                <h2>Nutrition & Training Blog</h2>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- breadcrumb-area-end -->
+
+            <!-- blog-area -->
+            <section class="blog-area pt-120 pb-120">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="single-blog-list mb-60">
+                                <div class="blog-list-thumb mb-35">
+                                    <a href="blog-details.html"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Protein Timing Guide"></a>
+                                </div>
+                                <div class="blog-list-content">
+                                    <div class="blog-list-tag mb-10">
+                                        <ul>
+                                            <li><i class="fas fa-tags"></i></li>
+                                            <li><a href="#">Nutrition,</a></li>
+                                            <li><a href="#">Protein Timing</a></li>
+                                        </ul>
+                                    </div>
+                                    <h2><a href="blog-details.html">The Complete Guide to Protein Timing for Athletes</a></h2>
+                                    <p>Discover the science behind optimal protein timing for maximum muscle growth and recovery. Learn when and how much protein you should consume before, during, and after workouts to maximize your training results. This comprehensive guide covers the anabolic window, protein synthesis rates, and practical timing strategies for different training goals.</p>
+                                    <div class="blog-list-meta">
+                                        <ul>
+                                            <li class="blog-post-date"><i class="far fa-clock"></i>December 15, 2023</li>
+                                            <li class="blog-more-read"><a href="blog-details.html">Read Full Article...</a></li>
+                                            <li class="blog-post-share">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-blog-list mb-60">
+                                <div class="blog-list-thumb mb-35">
+                                    <a href="blog-details.html"><img src="https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Whey vs Casein Protein"></a>
+                                </div>
+                                <div class="blog-list-content">
+                                    <div class="blog-list-tag mb-10">
+                                        <ul>
+                                            <li><i class="fas fa-tags"></i></li>
+                                            <li><a href="#">Supplements,</a></li>
+                                            <li><a href="#">Protein Types</a></li>
+                                        </ul>
+                                    </div>
+                                    <h2><a href="blog-details.html">Whey vs Casein: Which Protein is Right for You?</a></h2>
+                                    <p>Understanding the differences between whey and casein protein can help you choose the right supplement for your fitness goals. This detailed comparison covers absorption rates, amino acid profiles, timing recommendations, and specific use cases for each protein type. Learn which one aligns with your training schedule and objectives.</p>
+                                    <div class="blog-list-meta">
+                                        <ul>
+                                            <li class="blog-post-date"><i class="far fa-clock"></i>December 12, 2023</li>
+                                            <li class="blog-more-read"><a href="blog-details.html">Read Full Article...</a></li>
+                                            <li class="blog-post-share">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-blog-list mb-60">
+                                <div class="blog-list-thumb mb-35">
+                                    <a href="blog-details.html"><img src="https://images.unsplash.com/photo-1594882645126-14020914d58d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Plant Based Protein Guide"></a>
+                                </div>
+                                <div class="blog-list-content">
+                                    <div class="blog-list-tag mb-10">
+                                        <ul>
+                                            <li><i class="fas fa-tags"></i></li>
+                                            <li><a href="#">Vegan Nutrition,</a></li>
+                                            <li><a href="#">Plant Protein</a></li>
+                                        </ul>
+                                    </div>
+                                    <h2><a href="blog-details.html">Plant-Based Protein: Complete Guide for Athletes</a></h2>
+                                    <p>Everything you need to know about plant-based protein sources, amino acid profiles, and how to meet your protein needs on a vegan diet. This comprehensive guide covers the best plant protein combinations, supplementation strategies, and how to optimize muscle building on a plant-based nutrition plan.</p>
+                                    <div class="blog-list-meta">
+                                        <ul>
+                                            <li class="blog-post-date"><i class="far fa-clock"></i>December 10, 2023</li>
+                                            <li class="blog-more-read"><a href="blog-details.html">Read Full Article...</a></li>
+                                            <li class="blog-post-share">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination-wrap mt-30 text-center">
+                                <nav>
+                                    <ul class="pagination">
+                                        <li class="page-item"><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+                                        <li class="page-item active"><a href="#">01</a></li>
+                                        <li class="page-item"><a href="#">02</a></li>
+                                        <li class="page-item"><a href="#">03</a></li>
+                                        <li class="page-item"><a href="#">...</a></li>
+                                        <li class="page-item"><a href="#">08</a></li>
+                                        <li class="page-item"><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <aside class="blog-sidebar">
+                                <div class="widget mb-40">
+                                    <div class="single-sidebar search-sidebar-md">
+                                        <div class="sidebar-title mb-25">
+                                            <h3>Search Articles</h3>
+                                        </div>
+                                        <div class="sidebar-form">
+                                            <form action="#">
+                                                <input type="text" placeholder="Search nutrition topics...">
+                                                <button><i class="fas fa-search"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget mb-40">
+                                    <div class="single-sidebar white-bg">
+                                        <div class="sidebar-title mb-25">
+                                            <h3>Categories</h3>
+                                        </div>
+                                        <div class="cat-list">
+                                            <ul>
+                                                <li><a href="#">Protein & Supplements <span>(18)</span></a></li>
+                                                <li><a href="#">Workout Nutrition <span>(12)</span></a></li>
+                                                <li><a href="#">Training Tips <span>(15)</span></a></li>
+                                                <li><a href="#">Recovery & Sleep <span>(8)</span></a></li>
+                                                <li><a href="#">Weight Management <span>(10)</span></a></li>
+                                                <li><a href="#">Plant-Based Nutrition <span>(6)</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget mb-40">
+                                    <div class="single-sidebar white-bg">
+                                        <div class="sidebar-title mb-25">
+                                            <h3>Recent Articles</h3>
+                                        </div>
+                                        <div class="rc-post">
+                                            <ul>
+                                                <li>
+                                                    <div class="rc-post-thumb">
+                                                        <a href="blog-details.html"><img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Pre-Workout Nutrition"></a>
+                                                    </div>
+                                                    <div class="rc-post-content">
+                                                        <h5><a href="blog-details.html">Pre-Workout Nutrition: Fuel Your Training</a></h5>
+                                                        <span>December 8, 2023</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="rc-post-thumb">
+                                                        <a href="blog-details.html"><img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Muscle Recovery"></a>
+                                                    </div>
+                                                    <div class="rc-post-content">
+                                                        <h5><a href="blog-details.html">5 Science-Backed Ways to Speed Recovery</a></h5>
+                                                        <span>December 5, 2023</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="rc-post-thumb">
+                                                        <a href="blog-details.html"><img src="img/blog/supplement-timing-thumb.jpg" alt="Supplement Timing"></a>
+                                                    </div>
+                                                    <div class="rc-post-content">
+                                                        <h5><a href="blog-details.html">Supplement Timing: When to Take What</a></h5>
+                                                        <span>December 3, 2023</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget">
+                                    <div class="single-sidebar white-bg">
+                                        <div class="sidebar-title mb-25">
+                                            <h3>Popular Tags</h3>
+                                        </div>
+                                        <div class="tag-list">
+                                            <ul>
+                                                <li><a href="#">Whey Protein</a></li>
+                                                <li><a href="#">Muscle Building</a></li>
+                                                <li><a href="#">Recovery</a></li>
+                                                <li><a href="#">Pre-Workout</a></li>
+                                                <li><a href="#">BCAA</a></li>
+                                                <li><a href="#">Plant Protein</a></li>
+                                                <li><a href="#">Nutrition</a></li>
+                                                <li><a href="#">Training</a></li>
+                                                <li><a href="#">Supplements</a></li>
+                                                <li><a href="#">Fitness</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- blog-area-end -->
+
+        </main>
+        <!-- main-area-end -->
+
+        <!-- footer -->
+        <footer id="contact">
+            <div class="footer-wrap pt-90 pb-40" data-background="img/bg/footer_bg.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="footer-logo mb-35">
+                                    <a href="index.html"><img src="img/logo/w_logo.png" alt="ProFit Supplements"></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Premium protein supplements for serious athletes. Quality, purity, and performance you can trust.</p>
+                                </div>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-30">
+                                    <h5>Latest Articles</h5>
+                                </div>
+                                <div class="f-rc-post">
+                                    <ul>
+                                        <li>
+                                            <div class="f-rc-thumb">
+                                                <a href="blog-details.html"><img src="img/blog/footer-article-1.jpg" alt="Protein Timing"></a>
+                                            </div>
+                                            <div class="f-rc-content">
+                                                <span>Dec 15, 2023</span>
+                                                <h5><a href="blog-details.html">Complete Guide to Protein Timing</a></h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="f-rc-thumb">
+                                                <a href="blog-details.html"><img src="img/blog/footer-article-2.jpg" alt="Whey vs Casein"></a>
+                                            </div>
+                                            <div class="f-rc-content">
+                                                <span>Dec 12, 2023</span>
+                                                <h5><a href="blog-details.html">Whey vs Casein: Which is Better?</a></h5>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-30">
+                                    <h5>Quick Links</h5>
+                                </div>
+                                <div class="fw-link">
+                                    <ul>
+                                        <li><a href="index.html"><i class="fas fa-caret-right"></i> Home</a></li>
+                                        <li><a href="index.html#supplement"><i class="fas fa-caret-right"></i> Products</a></li>
+                                        <li><a href="order.html"><i class="fas fa-caret-right"></i> Order Online</a></li>
+                                        <li><a href="blog.html"><i class="fas fa-caret-right"></i> Nutrition Blog</a></li>
+                                        <li><a href="index.html#contact"><i class="fas fa-caret-right"></i> Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-30">
+                                    <h5>Newsletter Signup</h5>
+                                </div>
+                                <div class="footer-form">
+                                    <form action="#">
+                                        <input type="email" placeholder="Your Email Address">
+                                        <textarea name="message" id="message" placeholder="Questions about nutrition or training?"></textarea>
+                                        <button class="btn">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-wrap">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-7">
+                            <div class="copyright-text">
+                                <p>Copyright© <span>ProFit Supplements </span> | All Rights Reserved</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-5">
+                            <div class="f-payment-method text-center text-md-right">
+                                <img src="img/images/card_img.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-end -->
+
+
+
+
+
+		<!-- JS here -->
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/ajax-form.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/main.js"></script>
+        
+        <!-- Cursor trail effect -->
+        <script>
+          document.addEventListener('mousemove', function(e) {
+            const trail = document.createElement('div');
+            trail.className = 'cursor-trail';
+            trail.style.left = e.clientX + 'px';
+            trail.style.top = e.clientY + 'px';
+            document.body.appendChild(trail);
+            
+            setTimeout(() => {
+              trail.remove();
+            }, 800);
+          });
+        </script>
+    </body>
+</html>

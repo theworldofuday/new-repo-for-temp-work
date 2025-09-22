@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,600i,700,800,900&display=swap');
+ body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 14px;
+	color: #747373;
+}
+
+/* 4. Features */
+
+.features-bg {
+	background-image: url(../img/bg/features_bg.jpg);
+	box-shadow: 0px 2px 12.09px 6.91px rgba(82, 33, 162, 0.05);
+	background-position: center;
+	background-size: cover;
+	padding-top: 120px;
+	padding-bottom: 90px;
+	overflow: hidden;
+	position: relative;
+}
+.single-features {
+	background: #fff;
+	padding: 45px 25px;
+	box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.08);
+}
+.features-icon img {
+	transition: .5s linear;
+	transform: rotateY(0deg);
+}
+.features-content h5 {
+	font-size: 18px;
+	margin-bottom: 15px;
+	font-weight: 600;
+}
+.features-content p {
+	margin-bottom: 0;
+}
+.single-features:hover .features-icon img {
+	transform: rotateY(360deg);
+}
+
+/* 5. Services */
+.section-title h2 {
+	font-size: 36px;
+	margin-bottom: 0;
+	text-transform: capitalize;
+}
+.section-title .bar {
+	height: 2px;
+	width: 165px;
+	background: #c4c4c4;
+	margin: 20px auto 30px;
+	position: relative;
+	border-radius: 50%;
+}
+.section-title .bar::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -3px;
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: MOVE-BG;
+	animation-name: MOVE-BG;
+}
+@-webkit-keyframes MOVE-BG {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(163px);
+            transform: translateX(163px);
+  }
+}
+
+@keyframes MOVE-BG {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(163px);
+            transform: translateX(163px);
+  }
+}
+.section-title p {
+	margin-bottom: 0;
+	line-height: 28px;
+}
+.single-delivery-services {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+}
+.single-delivery-services.pr-40 .ds-icon {
+	margin-left: 17px;
+}
+.single-delivery-services .ds-icon i {
+	display: block;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 35px;
+	border: 2px dashed #2acb35;
+	border-radius: 50%;
+	color: #2acb35;
+	transition: .3s linear;
+}
+.single-delivery-services:hover .ds-icon i {
+	border: 2px dashed #28a745;
+	color: #28a745;
+	background-color: rgba(40, 167, 69, 0.1);
+	transform: scale(1.05);
+}
+.home-yellow .single-delivery-services:hover .ds-icon i {
+	border: 2px dashed #f99a00;
+}
+.ds-content h5 {
+	font-size: 18px;
+	text-transform: capitalize;
+	line-height: 1;
+	margin-bottom: 10px;
+	font-weight: 600;
+	transition: .3s linear;
+}
+.ds-content p {
+	margin-bottom: 0;
+}
+.single-delivery-services.pl-40 .ds-icon {
+	margin-right: 17px;
+}
+.d-services-img {
+	text-align: center;
+	position: relative;
+}
+.d-services-img::before {
+	content: "";
+	position: absolute;
+	background-image: url(../img/images/ellips_shape.png);
+	width: 578px;
+	height: 578px;
+	background-repeat: no-repeat;
+	left: -90px;
+	top: -15px;
+	z-index: -1;
+}
+.d-services-img::after {
+	content: "";
+	position: absolute;
+	background-image: url(../img/images/services_shape.png);
+	width: 709px;
+	height: 585px;
+	background-repeat: no-repeat;
+	left: -155px;
+	top: -20px;
+	z-index: -1;
+}
+.home-yellow .d-services-img::after {
+	background-image: url(../img/images/s_services_shape.png);
+}
+.services-style-two .single-delivery-services {
+	background: #fff;
+	padding: 35px 30px;
+	margin-bottom: 30px;
+	box-shadow: 0 3px 15px rgba(25, 25, 25, 0.1);
+}
+.services-style-two .single-delivery-services.pr-40 .ds-icon {
+	margin-left: 20px;
+}
+.services-style-two .single-delivery-services.pl-40 .ds-icon {
+	margin-right: 20px;
+}
+.single-delivery-services:last-child {
+	margin-bottom: 0;
+}
